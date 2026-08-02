@@ -1,21 +1,24 @@
-<?php 
+<?php
 
-function saudaçao (): string
+function saudaçao(): string
 {
-    $hora = -1;
-    $saudacao = '';
-    if($hora >=0 && $hora <= 5){
-    $saudacao = 'boa madrugada';
+    $hora =  8;
 
+    if ($hora >= 0 and $hora <= 5) {
+        $saudacao = 'boa madrugada';
+    } elseif ($hora >= 6 and $hora >= 12) {
+
+        $saudacao = "Bom dia!!";
+    } elseif ($hora >= 13 and $hora <= 18) {
+
+        $saudacao = "Boa Tarde!!";
+    } else {
+        $saudacao = "Boa Noite";
     }
-       
-    $saudaçao = "boa Tarde";
+
     echo "<br>";
     // var_dump($saudacao);
-    echo "<br>";
     return $saudacao;
-
-
 }
 
 function resumirTexto(string $texto,  int $limite, string $continue, string $texto2): string
@@ -40,13 +43,3 @@ print($idaderecebida);
 echo "<br><br>";
 
 */
-
-
-
-
-
-
-
-
-
-?>

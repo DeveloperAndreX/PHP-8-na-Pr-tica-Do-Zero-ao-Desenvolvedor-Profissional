@@ -12,15 +12,8 @@ $paragrafo_2 = "este e o segundo paragrafo";
 
 echo saudaçao();  // Boa Tarde
 echo "<br><br>";  // Pular Linha 
-echo resumirTexto($texto,50,$paragrafo,$paragrafo_2);  // 4 parametros infomados.
+echo resumirTexto($texto, 50, $paragrafo, $paragrafo_2);  // 4 parametros infomados.
 // somente vai exibir o parametro $texto = "texto para resumir";
 
 // chamando resumidamente:
 // pagando os dados separadamente:
-
-
-
-
-
-
-?>
