@@ -1,7 +1,7 @@
 <?php
 
 //Arquivo responsavel pela inicialização do sistema
-// declare(strict_types = 1);
+declare(strict_types = 1);
 include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
 require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
