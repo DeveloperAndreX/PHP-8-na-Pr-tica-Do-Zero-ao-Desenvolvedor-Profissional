@@ -2,14 +2,17 @@
 
 function saudaçao (): string
 {
-    $hora = 5;
+    $hora = -1;
+    $saudacao = '';
     if($hora >=0 && $hora <= 5){
-        $saudacao = 'Boa madrugada';
+    $saudacao = 'boa madrugada';
+
     }
-   
-    $saudaçao = "Boa Tarde";
+       
+    $saudaçao = "boa Tarde";
     echo "<br>";
-    var_dump($saudacao);
+    // var_dump($saudacao);
+    echo "<br>";
     return $saudacao;
 
 

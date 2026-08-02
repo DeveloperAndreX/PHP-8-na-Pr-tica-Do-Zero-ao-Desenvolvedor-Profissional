@@ -8,21 +8,13 @@ include_once './sistema/helpers.php';
 
 $texto = "Texto para resumir";
 
-//Tipos de Dados em PHP
-$string = 'texto';
-$int = 10;
-$float = 9.99;
-$bool = false;
-$nulo = null;
 
 // O vardump verifica o tipo de dado:
-var_dump($texto);
+//var_dump($texto);
 echo "<hr>";
-
-
 echo saudaçao();
-echo "<hr>";
-echo resumirTexto($texto,50,'continue','texto2');
+//echo "<hr>";
+//echo resumirTexto($texto,50,'continue','texto2');
 
 
 
