@@ -12,6 +12,7 @@ function resumirTexto($texto, $limite, $continue, $texto2)
     return $texto;
 }
 
+/*
 function dadosUsuarios () {
     $nome = "ana";
     $idade = 50;
@@ -26,6 +27,7 @@ echo "<br>";
 print($idaderecebida);
 echo "<br><br>";
 
+*/
 
 
 
