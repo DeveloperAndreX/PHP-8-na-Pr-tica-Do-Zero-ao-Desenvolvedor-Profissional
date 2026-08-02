@@ -1,12 +1,12 @@
 <?php
+
 //Arquivo responsavel pela inicialização do sistema
-
+declare(strict_types = 1);
 include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
-
 require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
 
-$texto = 1.2;
+$texto = "Mostra um texto de um paragrafo";
 
 //Tipos de Dados em PHP
 $string = 'texto';
