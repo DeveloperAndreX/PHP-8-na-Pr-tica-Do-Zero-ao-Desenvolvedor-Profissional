@@ -30,13 +30,16 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
     return $texto;
 }
 
-function receberSalario( float $salario): float
+function receberSalario( float $salario, float $adicionalNoturno): float
 { 
+    $result = $salario + $adicionalNoturno;
 
-if($salario >=0.00  AND $salario <= 600.00)
+
+if($salario >=0.00  AND $salario <= 600.00 AND $result > 100)
     {
         echo "Tipo de Dado e: " . gettype($salario) . "<br>"; 
-        echo "O salario recebido foi menor que o minimo: R$ {$salario} reais";
+        echo "O salario recebido foi menor que o minimo: R$ {$salario} reais <br>" ;
+        echo "e com o adicional o total recebido foi de: {$result}"; 
 
     }elseif($salario >=600.00 AND $salario <= 1621.00){
         echo "Tipo de dado e: " . gettype($salario) . "<br>";
@@ -46,12 +49,12 @@ if($salario >=0.00  AND $salario <= 600.00)
         echo "O seu salario esta entre o minimo de: R$ {$salario} e 2000.00 que e o Maximmo.";
 
     }else{
-        echo "O seu Salario Utrapassa 2.000,00 reais e est[a no valor de R$ {$salario}";
+        echo "O seu Salario Utrapassa 2.000,00 reais e esta no valor de R$ {$salario}";
 
     }
     
-    echo "<br><br>";
-    return "Valor final recebido: . $salario";
+    echo "<br>";
+    return $salario + $adicionalNoturno;
 
 }
 
