@@ -6,7 +6,7 @@ function saudaçao ()
 
 }
 
-function resumirTexto($texto, $limite, $continue, $texto2)
+function resumirTexto(string $texto,  $limite,  $continue,  $texto2)
 {
 
     return $texto;

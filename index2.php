@@ -6,9 +6,19 @@ include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
 require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
 
-$texto = "texto para resumir a variavel";
+$texto = 1.2;
 
-$string = '';
+//Tipos de Dados em PHP
+$string = 'texto';
+$int = 10;
+$float = 9.99;
+$bool = false;
+$nulo = null;
+
+// O vardump verifica o tipo de dado:
+var_dump($texto);
+echo "<hr>";
+
 
 echo saudaçao();
 echo "<hr>";
