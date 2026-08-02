@@ -1,8 +1,18 @@
 <?php 
 
-function saudaçao ()
+function saudaçao (): string
 {
-    return 'Boa tarde';
+    $hora = 7;
+
+    if($hora >=0 && $hora <= 5){
+        
+    $saudacao = 'boa madrugada';
+
+    }
+    var_dump($saudacao);
+    echo "<br>";
+    return $saudacao;
+
 
 }
 
