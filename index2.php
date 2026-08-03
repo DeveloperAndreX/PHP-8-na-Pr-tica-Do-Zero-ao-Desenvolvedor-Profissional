@@ -1,11 +1,13 @@
 <?php
 //Arquivo responsavel pela inicialização do sistema
 declare(strict_types = 1);
+include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/exemplo-02.php';
 include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
 require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
 
 echo formatarValor(500);
+echo formatarNumeros(1500.5, 42.333, 10000);
 echo "<br>";
 
 
