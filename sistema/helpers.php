@@ -36,7 +36,7 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
 {
 
     $textoLimpo = trim($texto);  // texto sem ponto e traços e espaços
-    if (mb_strlen(strip_tags($textoLimpo)) <= $limite):
+    if (mb_strlen(strip_tags(ucfirst($textoLimpo))) <= $limite):
         return $textoLimpo;
     endif;
 
