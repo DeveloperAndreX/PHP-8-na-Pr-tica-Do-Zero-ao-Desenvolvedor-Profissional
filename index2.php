@@ -5,7 +5,7 @@ include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
 require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
 
-echo formatarValor(500,2);
+echo formatarValor(500);
 echo "<br>";
 
 

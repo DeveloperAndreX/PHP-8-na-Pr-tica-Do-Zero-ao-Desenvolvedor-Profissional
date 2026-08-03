@@ -8,15 +8,26 @@ declare(strict_types=1);
  * 
  */
 
-function formatarValor(float $value, int $transform): string
+function formatarValor(float $value = null):string
 {
-    
-    $transform = number_format($transform, 1, ',', '.') . PHP_EOL;
-
-    return number_Format($value, 2, ',','.') . "<br>" .  $transform . PHP_EOL;
+   
+    return "R$ " . number_Format(($value ? $value : 0), 2, ',','.'). PHP_EOL;
+    exit(0);
 } 
 
+/**
+ * @param float $num1 receberá um numero a ser formatado em reais
+ * @param float $num2 receberá segundo numero a ser formatada
+ * @param float $num3 receberá terceiro e ultimo numero para validação com ternario e retorno de função formatada!
+ */
+// desafio de formatação de numeros:
+function formatarNumeros(float $num1 = null, float $num2 = null,float $num3 = null):string
+{
+    return "Valor 1 do num1 em R$: " . number_format(($num1 ? $num1 : 0),2,',','.') . 
+           "Valor 2 do num2 em R$: " . number_format(($num2 ? $num2 : 0),2,',','.') . 
+           "Valor 3 do num3 em R$: " . number_format(($num3 ? $num3 : 0),2,',','.');
 
+}
 
 function saudaçao(): string
 {
