@@ -10,9 +10,9 @@ declare(strict_types=1);
 function formatarValor(float $value, int $transform): string
 {
     
-    trim($transform = number_format($transform, 1, ',', '.'));
+    $transform = number_format($transform, 1, ',', '.') . PHP_EOL;
 
-    return number_Format($value, 2, ',','.') . $transform . PHP_EOL;
+    return number_Format($value, 2, ',','.') . "<br>" .  $transform . PHP_EOL;
 } 
 
 
