@@ -1,15 +1,19 @@
 <?php
 declare(strict_types=1);
 
+/**
+ * @param float $value recebe um valor do tipo float e retorna uma função formatada.
+ * @param int $transform Opcional parametro que armazena um inteiro e tira os espaços vazios (trim) e retorna uma função formatada de $transform
+ * 
+ */
 
 function formatarValor(float $value, int $transform): string
 {
     
     trim($transform = number_format($transform, 1, ',', '.'));
-    
-    return number_Format($value, 2, ',','.');
-} 
 
+    return number_Format($value, 2, ',','.') . $transform . PHP_EOL;
+} 
 
 
 
