@@ -7,11 +7,14 @@ require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
 
 $texto = "Texto para resumir";
-echo "<br>";
-echo receberSalario(600.00, 400.00);
+
+echo $total = mb_strlen($texto);
+
+//echo "<br>";
+//echo receberSalario(600.00, 400.00);
 // O vardump verifica o tipo de dado:
 //var_dump($texto);
-echo "<hr>";
-echo saudaçao();
+//echo "<hr>";
+//echo saudaçao();
 //echo "<hr>";
 //echo resumirTexto($texto,50,'continue','texto2');
