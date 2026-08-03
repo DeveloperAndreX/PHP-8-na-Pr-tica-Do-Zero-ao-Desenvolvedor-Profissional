@@ -36,14 +36,13 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
 {
 
     $textoLimpo = trim($texto);  // texto sem ponto e traços e espaços
-    if(mb_strlen($textoLimpo) <= $limite):
+    if (mb_strlen($textoLimpo) <= $limite):
         return $textoLimpo;
     endif;
 
     $resumirTexto = mb_substr($textoLimpo, 0, mb_strrpos(mb_substr($textoLimpo, 0, $limite), ''));
 
-    return $resumirTexto.$continue;
-    
+    return $resumirTexto . $continue;
 }
 
 function receberSalario(float $salario, float $adicionalNoturno): float
