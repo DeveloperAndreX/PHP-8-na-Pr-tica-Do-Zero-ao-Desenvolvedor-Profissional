@@ -17,9 +17,9 @@ echo "<br>";
 echo $tatal2 = mb_strlen(rtrim($texto2));
 echo "<br>";
 
-echo $resumo = mb_substr($texto, 1, 3);
+echo $resumo = mb_substr($texto, 0, 5);
 echo "<br>";
-echo $ocorrencia = mb_strrpos($texto, 'o');
+echo "essa e a ocorrencia: " .  $ocorrencia = mb_strrpos($texto, 't');
 
 
 
@@ -31,4 +31,3 @@ echo $ocorrencia = mb_strrpos($texto, 'o');
 //echo saudaçao();
 //echo "<hr>";
 //echo resumirTexto($texto,50,'continue','texto2');
-?>
