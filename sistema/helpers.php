@@ -34,6 +34,9 @@ function saudaçao(): string
 
 /**
  *   * 
+ * @author My Name Andre Panizza
+ * @author My Name <andredeveloper45@gmail.com>
+ * @version GIT in development. not is unstable, example make create in https://https://github.com/DeveloperAndreX. inside repository the      name PHP.
  * @param string $texto texto para Resumir
  * @param int    $limite  quantidade de caracteres
  * @param string $continue  parametro Opcional - O que deve ser exibido ao final do resumo ou adicionar um link.
