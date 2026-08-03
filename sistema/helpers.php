@@ -32,6 +32,15 @@ function saudaçao(): string
     return $saudacao;
 }
 
+/**
+ *   * 
+ * @param string $texto texto para Resumir
+ * @param int    $limite  quantidade de caracteres
+ * @param string $continue  parametro Opcional - O que deve ser exibido ao final do resumo ou adicionar um link.
+ * @param string $texto2 parametro Opcional - espera receber uma String finalização
+ * 
+ */
+
 function resumirTexto(string $texto,  int $limite, string $continue, string $texto2): string
 {
 
@@ -45,9 +54,16 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
     return $resumirTexto . $continue;
 }
 
+/**
+ * @param float $salario variavel que recebe salario base do trabalhador
+ * @param float $adicionalNoturno parametro recebe horas adicionais trabalhadas
+ * @param 
+ * 
+ */
+
 function receberSalario(float $salario, float $adicionalNoturno): float
 {
-    $result = $salario + $adicionalNoturno;
+    $result = floatval($salario + $adicionalNoturno);
 
 
     if ($salario >= 0.00  and $salario <= 600.00 and $result > 100) {
@@ -58,13 +74,13 @@ function receberSalario(float $salario, float $adicionalNoturno): float
         echo ucfirst("Tipo de dado e: " . gettype($salario) . "<br>");
         echo ucfirst("O salario recebido esta dentro do esperado: R$ {$salario} reais");
     } elseif ($salario >= 1621.00 || $salario <= 2000.00) {
-        echo ucfirst("O seu salario esta entre o minimo de: R$ {$salario} e 2000.00 que e o Maximmo.");
+        echo ucfirst("O seu salario esta entre o minimo de: R$ {$salario} e 2000.00 que e o Maximo.");
     } else {
         echo ucfirst("O seu Salario Utrapassa 2.000,00 reais e esta no valor de R$ {$salario}");
     }
 
     echo "<br>";
-    return $salario + $adicionalNoturno;
+    return  ($salario + $adicionalNoturno);
 }
 
 /*
