@@ -6,14 +6,20 @@ include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
 require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
 
-$texto = "     Texto para resumir     ";
+$texto = "Texto para resumir";
 $texto1 = "Texto 2 para resumir parcialmente     ";
 $texto2 = "     Texto 3 para resumir Totalmente";
 
 echo $total = mb_strlen(trim($texto));
+echo "<br>";
 echo $total1 = mb_strlen(ltrim($texto1));
+echo "<br>";
 echo $tatal2 = mb_strlen(rtrim($texto2));
+echo "<br>";
 
+echo $resumo = mb_substr($texto, 1, 3);
+echo "<br>";
+echo $ocorrencia = mb_strrpos($texto, 'o');
 
 
 
@@ -25,3 +31,4 @@ echo $tatal2 = mb_strlen(rtrim($texto2));
 //echo saudaçao();
 //echo "<hr>";
 //echo resumirTexto($texto,50,'continue','texto2');
+?>
