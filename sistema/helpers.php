@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 /**
+ * @author Andre Panizza
  * @param float $value recebe um valor do tipo float e retorna uma função formatada.
  * @param int $transform Opcional parametro que armazena um inteiro e tira os espaços vazios (trim) e retorna uma função formatada de $transform
  * 
