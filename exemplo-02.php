@@ -12,9 +12,12 @@
 // Aplica o number_format com 2 casas decimais, vírgula e ponto
 $numerosFormatados = array_map(function($valor) {
     return number_format($valor, 2, ',', '.');
+     
+
 }, (array)$numeros);
 
-print_r($numerosFormatados);
+ print_r(json_encode($numerosFormatados));
+
 
 /* Resultado:
 Array (

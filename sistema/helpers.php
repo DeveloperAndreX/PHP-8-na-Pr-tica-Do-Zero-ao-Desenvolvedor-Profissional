@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /**
@@ -8,12 +9,12 @@ declare(strict_types=1);
  * 
  */
 
-function formatarValor(float $value = null):string
+function formatarValor(float $value = null): string
 {
-   
-    return "R$ " . number_Format(($value ? $value : 0), 2, ',','.'). PHP_EOL;
+
+    return "R$ " . number_Format(($value ? $value : 0), 2, ',', '.') . PHP_EOL;
     exit(0);
-} 
+}
 
 /**
  * @param float $num1 receberá um numero a ser formatado em reais
@@ -21,12 +22,12 @@ function formatarValor(float $value = null):string
  * @param float $num3 receberá terceiro e ultimo numero para validação com ternario e retorno de função formatada!
  */
 // desafio de formatação de numeros:
-function formatarNumeros(float $num1 = null, float $num2 = null,float $num3 = null):string
+function formatarNumeros(float $num1 = null, float $num2 = null, float $num3 = null): string
 {
-    return "Valor 1 do num1 em R$: " . number_format(($num1 ? $num1 : 0),2,',','.') . 
-           "Valor 2 do num2 em R$: " . number_format(($num2 ? $num2 : 0),2,',','.') . 
-           "Valor 3 do num3 em R$: " . number_format(($num3 ? $num3 : 0),2,',','.');
-
+    return "Valor 1 do num1 em R$: " . number_format(($num1 ? $num1 : 0), 2, ',', '.') . "<br>" .
+        "Valor 2 do num2 em R$: " . number_format(($num2 ? $num2 : 0), 2, ',', '.') . "<br>" .
+        "Valor 3 do num3 em R$: " . number_format(($num3 ? $num3 : 0), 2, ',', '.') . "<br>";
+    exit(0);
 }
 
 function saudaçao(): string
@@ -80,9 +81,9 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
     if (mb_strlen(strip_tags(ucfirst($textoLimpo))) <= $limite):
         return $textoLimpo;
     endif;
-    
+
     $resumirTexto = mb_substr($textoLimpo, 0, mb_strrpos(mb_substr($textoLimpo, 0, $limite), ''));
-   
+
     return $resumirTexto . $continue;
 }
 
@@ -95,9 +96,9 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
 
 function receberSalario(float $salario, float $adicionalNoturno): float
 {
-     $result = floatval($salario + $adicionalNoturno);
+    $result = floatval($salario + $adicionalNoturno);
 
-    
+
 
     if ($salario >= 0.00  and $salario <= 600.00 and $result > 100) {
         echo ucfirst("Tipo de Dado e: " . gettype($salario) . "<br>");
@@ -113,7 +114,7 @@ function receberSalario(float $salario, float $adicionalNoturno): float
     }
 
     echo "<br>";
-    return  ($salario + $adicionalNoturno);
+    return ($salario + $adicionalNoturno);
 }
 
 /*
