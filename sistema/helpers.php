@@ -1,26 +1,33 @@
 <?php
-
+declare(strict_types = 1);
 function saudaçao(): string
 {
-    $hora =  20;
+    $tz = date_default_timezone_set('America/Sao_Paulo');
+    echo $hora = date('H:i:s:sP');
+    echo "<br>";
 
     if ($hora >= 0 and $hora <= 5) {
-        $saudacao = 'boa madrugada';
-
+        $saudacao = ucfirst("boa madrugada <br>");
+        if ($tz == 1):
+            $text = "location: America/Sao_Paulo";
+            echo ucwords($text);
+        elseif ($tz == 0 || $tz !== -1):
+            $text1 = "location: Outro Continente diferente";
+            echo ucwords($text1);
+        endif;
     } elseif ($hora >= 6 and $hora <= 12) {
 
-        $saudacao = "Bom dia!!";
+        $saudacao = ucfirst("Bom dia!! <br>");
     } elseif ($hora >= 13 and $hora <= 18) {
 
-        $saudacao = "Boa Tarde!!";
-
+        $saudacao = ucfirst("Boa Tarde!! <br>");
     } else {
         //Saudação Default
-        $saudacao = "Boa Noite";
+        $saudacao = ucfirst("Boa Noite <br>");
     }
 
     echo "<br>";
-    // var_dump($saudacao);
+
     return $saudacao;
 }
 
@@ -30,32 +37,26 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
     return $texto;
 }
 
-function receberSalario( float $salario, float $adicionalNoturno): float
-{ 
+function receberSalario(float $salario, float $adicionalNoturno): float
+{
     $result = $salario + $adicionalNoturno;
 
 
-if($salario >=0.00  AND $salario <= 600.00 AND $result > 100)
-    {
-        echo "Tipo de Dado e: " . gettype($salario) . "<br>"; 
-        echo "O salario recebido foi menor que o minimo: R$ {$salario} reais <br>" ;
-        echo "e com o adicional o total recebido foi de: {$result}"; 
-
-    }elseif($salario >=600.00 AND $salario <= 1621.00){
+    if ($salario >= 0.00  and $salario <= 600.00 and $result > 100) {
+        echo "Tipo de Dado e: " . gettype($salario) . "<br>";
+        echo "O salario recebido foi menor que o minimo: R$ {$salario} reais <br>";
+        echo "e com o adicional o total recebido foi de: {$result}";
+    } elseif ($salario >= 600.00 and $salario <= 1621.00) {
         echo "Tipo de dado e: " . gettype($salario) . "<br>";
         echo "O salario recebido esta dentro do esperado: R$ {$salario} reais";
-
-    }elseif($salario >= 1621.00 || $salario <= 2000.00) {
+    } elseif ($salario >= 1621.00 || $salario <= 2000.00) {
         echo "O seu salario esta entre o minimo de: R$ {$salario} e 2000.00 que e o Maximmo.";
-
-    }else{
+    } else {
         echo "O seu Salario Utrapassa 2.000,00 reais e esta no valor de R$ {$salario}";
-
     }
-    
+
     echo "<br>";
     return $salario + $adicionalNoturno;
-
 }
 
 /*
