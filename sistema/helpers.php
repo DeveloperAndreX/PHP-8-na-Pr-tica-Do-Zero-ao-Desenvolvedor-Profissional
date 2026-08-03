@@ -2,6 +2,14 @@
 declare(strict_types=1);
 
 
+function formatarValor(float $value, int $transform): string
+{
+    
+    trim($transform = number_format($transform, 1, ',', '.'));
+    
+    return number_Format($value, 2, ',','.');
+} 
+
 
 
 
