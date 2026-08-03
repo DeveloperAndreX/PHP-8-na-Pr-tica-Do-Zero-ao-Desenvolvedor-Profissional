@@ -37,7 +37,8 @@ function saudaçao(): string
  * @param string $texto texto para Resumir
  * @param int    $limite  quantidade de caracteres
  * @param string $continue  parametro Opcional - O que deve ser exibido ao final do resumo ou adicionar um link.
- * @param string $texto2 parametro Opcional - espera receber uma String finalização
+ * @param string $texto2 parametro Opcional - espera receber uma String finalização.
+ * @return string Texto resumido.
  * 
  */
 
@@ -48,9 +49,9 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
     if (mb_strlen(strip_tags(ucfirst($textoLimpo))) <= $limite):
         return $textoLimpo;
     endif;
-
+    
     $resumirTexto = mb_substr($textoLimpo, 0, mb_strrpos(mb_substr($textoLimpo, 0, $limite), ''));
-
+   
     return $resumirTexto . $continue;
 }
 
