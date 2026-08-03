@@ -36,7 +36,7 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
 {
 
     $textoLimpo = trim($texto);  // texto sem ponto e traços e espaços
-    if (mb_strlen($textoLimpo) <= $limite):
+    if (mb_strlen(strip_tags($textoLimpo)) <= $limite):
         return $textoLimpo;
     endif;
 
@@ -68,6 +68,7 @@ function receberSalario(float $salario, float $adicionalNoturno): float
 }
 
 /*
+exemplo utilizando ARRAYS:
 function dadosUsuarios () {
     $nome = "ana";
     $idade = 50;
