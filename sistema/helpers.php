@@ -51,16 +51,16 @@ function receberSalario(float $salario, float $adicionalNoturno): float
 
 
     if ($salario >= 0.00  and $salario <= 600.00 and $result > 100) {
-        echo "Tipo de Dado e: " . gettype($salario) . "<br>";
-        echo "O salario recebido foi menor que o minimo: R$ {$salario} reais <br>";
-        echo "e com o adicional o total recebido foi de: {$result}";
+        echo ucfirst("Tipo de Dado e: " . gettype($salario) . "<br>");
+        echo ucfirst("O salario recebido foi menor que o minimo: R$ {$salario} reais <br>");
+        echo ucfirst("e com o adicional o total recebido foi de: {$result}");
     } elseif ($salario >= 600.00 and $salario <= 1621.00) {
-        echo "Tipo de dado e: " . gettype($salario) . "<br>";
-        echo "O salario recebido esta dentro do esperado: R$ {$salario} reais";
+        echo ucfirst("Tipo de dado e: " . gettype($salario) . "<br>");
+        echo ucfirst("O salario recebido esta dentro do esperado: R$ {$salario} reais");
     } elseif ($salario >= 1621.00 || $salario <= 2000.00) {
-        echo "O seu salario esta entre o minimo de: R$ {$salario} e 2000.00 que e o Maximmo.";
+        echo ucfirst("O seu salario esta entre o minimo de: R$ {$salario} e 2000.00 que e o Maximmo.");
     } else {
-        echo "O seu Salario Utrapassa 2.000,00 reais e esta no valor de R$ {$salario}";
+        echo ucfirst("O seu Salario Utrapassa 2.000,00 reais e esta no valor de R$ {$salario}");
     }
 
     echo "<br>";
