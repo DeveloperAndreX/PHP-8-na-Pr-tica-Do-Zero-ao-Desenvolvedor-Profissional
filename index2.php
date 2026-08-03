@@ -1,17 +1,17 @@
 <?php
 //Arquivo responsavel pela inicialização do sistema
 declare(strict_types = 1);
-require_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/exemplo-02.php';
+//require_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/exemplo-02.php';
 include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
 require_once 'sistema/configuracao.php';
 include_once './sistema/helpers.php';
 
 //echo formatarValor(500);
-echo "<br>";
-echo formatarNumeros(1500.5, 42.333, 10000);
-echo "<br>";
-print_r(json_encode($numerosFormatados));
-
+//echo "<br>";
+//echo formatarNumeros(1500.5, 42.333, 10000);
+//echo "<br>";
+//print_r(json_encode($numerosFormatados));
+echo formatarNumbers();
 /*
 (int)$valor = 5;
 (float)$valor1 = 5.5;

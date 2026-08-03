@@ -34,6 +34,11 @@ function formatarNumeros(float $num1 = null, float $num2 = null, float $num3 = n
  * 
  */
 //Exemplo do Professor:
+function formatarNumbers(string $number = null):string
+{
+    return number_format($number ? : 0, 0 ,'.',',');
+    
+}
 
 function saudaçao(): string
 {
