@@ -61,7 +61,7 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
 /**
  * @param float $salario variavel que recebe salario base do trabalhador
  * @param float $adicionalNoturno parametro recebe horas adicionais trabalhadas
- * @param float $result Opcional, realiza a soma dos valores salario + adicionalNoturno 
+ * @param float $result Opcional, realiza a soma dos valores salario + adicionalNoturno;
  * 
  */
 
