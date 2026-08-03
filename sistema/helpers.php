@@ -30,6 +30,11 @@ function formatarNumeros(float $num1 = null, float $num2 = null, float $num3 = n
     exit(0);
 }
 
+/**
+ * 
+ */
+//Exemplo do Professor:
+
 function saudaçao(): string
 {
     $tz = date_default_timezone_set('America/Sao_Paulo');
