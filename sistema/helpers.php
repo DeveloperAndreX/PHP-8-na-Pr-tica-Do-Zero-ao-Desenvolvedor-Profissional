@@ -57,14 +57,15 @@ function resumirTexto(string $texto,  int $limite, string $continue, string $tex
 /**
  * @param float $salario variavel que recebe salario base do trabalhador
  * @param float $adicionalNoturno parametro recebe horas adicionais trabalhadas
- * @param 
+ * @param float $result Opcional, realiza a soma dos valores salario + adicionalNoturno 
  * 
  */
 
 function receberSalario(float $salario, float $adicionalNoturno): float
 {
-    $result = floatval($salario + $adicionalNoturno);
+     $result = floatval($salario + $adicionalNoturno);
 
+    
 
     if ($salario >= 0.00  and $salario <= 600.00 and $result > 100) {
         echo ucfirst("Tipo de Dado e: " . gettype($salario) . "<br>");
