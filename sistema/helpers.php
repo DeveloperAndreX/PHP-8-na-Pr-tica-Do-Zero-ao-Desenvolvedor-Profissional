@@ -9,7 +9,7 @@ declare(strict_types=1);
  * 
  */
 
-function formatarValor(float $value = null): string
+function formatarValor(?float $value = null): string
 {
 
     return "R$ " . number_Format(($value ? $value : 0), 2, ',', '.') . PHP_EOL;
@@ -22,7 +22,7 @@ function formatarValor(float $value = null): string
  * @param float $num3 receberá terceiro e ultimo numero para validação com ternario e retorno de função formatada!
  */
 // desafio de formatação de numeros:
-function formatarNumeros(float $num1 = null, float $num2 = null, float $num3 = null): string
+function formatarNumeros(?float $num1 = null, ?float $num2 = null, ?float $num3 = null): string
 {
     return "Valor 1 do num1 em R$: " . number_format(($num1 ? $num1 : 0), 2, ',', '.') . "<br>" .
         "Valor 2 do num2 em R$: " . number_format(($num2 ? $num2 : 0), 2, ',', '.') . "<br>" .
@@ -34,9 +34,9 @@ function formatarNumeros(float $num1 = null, float $num2 = null, float $num3 = n
  * 
  */
 //Exemplo do Professor:
-function formatarNumbers(string $number = null):string
+function formatarNumbers(?string $number = null):string
 {
-    return number_format($number ? : 0, 0 ,'.',',');
+    return number_format($number ? (floatval($number)) : 0, 0 ,'.',',');
     
 }
 

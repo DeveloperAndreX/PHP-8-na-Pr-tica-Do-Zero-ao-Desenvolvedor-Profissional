@@ -2,9 +2,13 @@
 //Arquivo responsavel pela inicialização do sistema
 declare(strict_types = 1);
 //require_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/exemplo-02.php';
-include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
-require_once 'sistema/configuracao.php';
-include_once './sistema/helpers.php';
+//include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
+//require_once 'sistema/configuracao.php';
+
+// Busca a partir da pasta atual do script de forma segura
+require_once __DIR__ . '/sistema/configuracao.php';
+include_once __DIR__ . '/sistema/helpers.php';
+
 
 //echo formatarValor(500);
 //echo "<br>";
