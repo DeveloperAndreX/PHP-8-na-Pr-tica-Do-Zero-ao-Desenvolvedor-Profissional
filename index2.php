@@ -5,7 +5,7 @@ declare(strict_types = 1);
 //include_once '../PHP_8_Na_Pratica_Zero_ao_Profissional/sistema/helpers.php';
 //require_once 'sistema/configuracao.php';
 
-// Busca a partir da pasta atual do script de forma segura
+// Busca a partir da pasta atual do script de forma segura:
 require_once __DIR__ . '/sistema/configuracao.php';
 include_once __DIR__ . '/sistema/helpers.php';
 
@@ -15,7 +15,7 @@ include_once __DIR__ . '/sistema/helpers.php';
 //echo formatarNumeros(1500.5, 42.333, 10000);
 //echo "<br>";
 //print_r(json_encode($numerosFormatados));
-echo formatarNumbers();
+echo formatarNumbers(10000);
 /*
 (int)$valor = 5;
 (float)$valor1 = 5.5;

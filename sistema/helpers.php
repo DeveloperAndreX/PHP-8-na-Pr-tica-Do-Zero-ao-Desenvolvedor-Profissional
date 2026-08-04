@@ -31,12 +31,22 @@ function formatarNumeros(?float $num1 = null, ?float $num2 = null, ?float $num3 
 }
 
 /**
+ * Formata uma string numérica para o padrão de milhar americano.
+ *
+ * @category Helper
+ * @package  Sistema
+ * @author   Andre Panizza <andredeveloper45@gmail.com>
+ * @license  https://opensource.org MIT License
  * 
+ * @param string|null $number O número em formato de string ou nulo a ser formatado.
+ * 
+ * @return string O número formatado com separador de milhar (ex: "1,250").
  */
 //Exemplo do Professor:
 function formatarNumbers(?string $number = null):string
 {
-    return number_format($number ? (floatval($number)) : 0, 0 ,'.',',');
+    // return number_format($number ? (float($number)) : 0, 0 ,'.',',');
+    return number_format((float)($number ? $number : 0), 0, '.', ',');
     
 }
 
