@@ -43,7 +43,7 @@ function formatarNumeros(?float $num1 = null, ?float $num2 = null, ?float $num3 
  * @return string O número formatado com separador de milhar (ex: "1,250").
  */
 //Exemplo do Professor:
-function formatarNumbers(?string $number = null):string
+function formatarNumbers(?int $number = null):string
 {
     // return number_format($number ? (float($number)) : 0, 0 ,'.',',');
     return number_format(($number ? $number : 0), 0, '.', ',');
