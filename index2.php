@@ -15,7 +15,8 @@ include_once __DIR__ . '/sistema/helpers.php';
 //echo formatarNumeros(1500.5, 42.333, 10000);
 //echo "<br>";
 //print_r(json_encode($numerosFormatados));
-echo formatarNumbers(10000);
+//echo formatarNumbers("10000");
+
 /*
 (int)$valor = 5;
 (float)$valor1 = 5.5;

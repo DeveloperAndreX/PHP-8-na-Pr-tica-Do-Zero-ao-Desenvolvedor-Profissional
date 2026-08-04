@@ -46,7 +46,7 @@ function formatarNumeros(?float $num1 = null, ?float $num2 = null, ?float $num3 
 function formatarNumbers(?string $number = null):string
 {
     // return number_format($number ? (float($number)) : 0, 0 ,'.',',');
-    return number_format((float)($number ? $number : 0), 0, '.', ',');
+    return number_format(($number ? $number : 0), 0, '.', ',');
     
 }
 
