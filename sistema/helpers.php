@@ -9,6 +9,13 @@ declare(strict_types=1);
  * 
  */
 
+function contarTempo(string $data)
+{
+    var_dump($data);
+
+}
+
+
 function formatarValor(?float $value = null): string
 {
 

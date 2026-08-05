@@ -1,26 +1,23 @@
 <?php
-//Arquivo responsavel pela inicialização do sistema
 
 // Busca a partir da pasta atual do script de forma segura:
 require_once __DIR__ . '/sistema/configuracao.php';
 include_once __DIR__ . '/sistema/helpers.php';
 
-(string)$data = date('d/m/Y H:i:s');
-echo $data;
-
-
-
 (int)$month = 8;
 (int)$year = 2026;
 (int)$day = 4;
 
+(string)$data = date('d/m/Y H:i:s');
+echo $data;
 echo "<hr>";
+
 if (isset($month, $year, $day)):
     $verifyDate = checkdate($day, $month, $year);
     echo ucfirst(" <b> retorna: </b>  ") . "<br>";
     echo "Tipo de Dado e:" . gettype($verifyDate) . "<br>";
-    var_dump($verifyDate);
-
+    var_dump($verifyDate); // False.
+   
     // exemplos da documentação:
     echo "<hr>";
 
@@ -31,3 +28,5 @@ else:
     echo "FATAL ERROR";
 
 endif;
+
+?>
