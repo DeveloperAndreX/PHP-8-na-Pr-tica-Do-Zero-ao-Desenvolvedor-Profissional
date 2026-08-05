@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+//declare(strict_types=1);
 
 /**
  * @author Andre Panizza
@@ -9,9 +9,11 @@ declare(strict_types=1);
  * 
  */
 
-function contarTempo(string $data)
+function contarTempo(int $data)
 {
+
     var_dump($data);
+  
 
 }
 
