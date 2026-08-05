@@ -30,10 +30,9 @@ function contarTempo(string $data)
     elseif ($horas <= 24):
         return $horas == 1 ? 'há uma hora' : 'ha' . $horas . ' horas ';
     endif;
+    // continuamos amanhã 05-08-2026 Quarta-feira. 
 
-
-    //return "Vou retornar o valor da <b>variavel:</b> {$agora})<br> e o <b>Ultimo</b> valor: {$depois} \n" . PHP_EOL;
-
+    
 
 }
 
