@@ -22,10 +22,16 @@ function contarTempo(string $data)
     $semanas = round($diferenca / 604.800);
     $meses = round($diferenca /  2419200);
     $anos = round($diferenca / 29030400);
-    
-    echo "<hr>";
-    var_dump($data);
-    
+
+   if($segundos <= 60):
+       return 'Agora';
+    elseif($minutos <= 60):
+        return $minutos == 1 ? 'há um minuto' : $minutos . "minutos"; 
+    elseif($horas <= 24):
+        return $horas == 1 ? 'há uma hora' : 'ha' . $horas .' horas ';
+    elseif($dias <= )
+   endif;
+
     
     //return "Vou retornar o valor da <b>variavel:</b> {$agora})<br> e o <b>Ultimo</b> valor: {$depois} \n" . PHP_EOL;
            

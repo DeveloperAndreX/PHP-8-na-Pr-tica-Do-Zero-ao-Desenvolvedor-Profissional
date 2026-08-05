@@ -6,7 +6,7 @@ require_once __DIR__ . '/sistema/configuracao.php';
 include_once __DIR__ . '/sistema/helpers.php';
 
 
-echo contarTempo('2026-08-04 23:40:50');
+echo contarTempo('2026-08-04 21:10:50');
 //strtotime();
 
 ?>
