@@ -16,25 +16,24 @@ function contarTempo(string $data)
     $diferenca = ($tempo - $agora);
 
     $segundos = $diferenca;
-    $minutos =  round($diferenca / 60);  
+    $minutos =  round($diferenca / 60);
     $horas =  round($diferenca / 3.600);
     $dias = round($diferenca / 86.400);
     $semanas = round($diferenca / 604.800);
     $meses = round($diferenca /  2419200);
     $anos = round($diferenca / 29030400);
 
-   if($segundos <= 60):
-       return 'Agora';
-    elseif($minutos <= 60):
-        return $minutos == 1 ? 'há um minuto' : $minutos . "minutos"; 
-    elseif($horas <= 24):
-        return $horas == 1 ? 'há uma hora' : 'ha' . $horas .' horas ';
-    elseif($dias <= )
-   endif;
+    if ($segundos <= 60):
+        return 'Agora';
+    elseif ($minutos <= 60):
+        return $minutos == 1 ? 'há um minuto' : $minutos . "minutos";
+    elseif ($horas <= 24):
+        return $horas == 1 ? 'há uma hora' : 'ha' . $horas . ' horas ';
+    endif;
 
-    
+
     //return "Vou retornar o valor da <b>variavel:</b> {$agora})<br> e o <b>Ultimo</b> valor: {$depois} \n" . PHP_EOL;
-           
+
 
 }
 
@@ -73,11 +72,10 @@ function formatarNumeros(?float $num1 = null, ?float $num2 = null, ?float $num3 
  * @return string O número formatado com separador de milhar (ex: "1,250").
  */
 //Exemplo do Professor:
-function formatarNumbers(?int $number = null):string
+function formatarNumbers(?int $number = null): string
 {
     // return number_format($number ? (float($number)) : 0, 0 ,'.',',');
     return number_format(($number ? $number : 0), 0, '.', ',');
-    
 }
 
 function saudaçao(): string
