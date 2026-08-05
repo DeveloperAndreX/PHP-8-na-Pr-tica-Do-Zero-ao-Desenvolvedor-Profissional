@@ -11,10 +11,24 @@
 
 function contarTempo(string $data)
 {
-    $agora = date('Y-m-d H:i:s');
-    echo $agora;
+    $agora = strtotime(date('Y-m-d H:i:s'));
+    $tempo = strtotime($data);
+    $diferenca = ($tempo - $agora);
+
+    $segundos = $diferenca;
+    $minutos =  round($diferenca / 60);  
+    $horas =  round($diferenca / 3.600);
+    $dias = round($diferenca / 86.400);
+    $semanas = round($diferenca / 604.800);
+    $meses = round($diferenca /  2419200);
+    $anos = round($diferenca / 29030400);
+    
+    echo "<hr>";
     var_dump($data);
-  
+    
+    
+    //return "Vou retornar o valor da <b>variavel:</b> {$agora})<br> e o <b>Ultimo</b> valor: {$depois} \n" . PHP_EOL;
+           
 
 }
 
