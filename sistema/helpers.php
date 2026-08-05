@@ -9,9 +9,10 @@
  * 
  */
 
-function contarTempo(int $data)
+function contarTempo(string $data)
 {
-
+    $agora = date('Y-m-d H:i:s');
+    echo $agora;
     var_dump($data);
   
 
