@@ -34,7 +34,10 @@ function contarTempo(string $data)
         elseif ($semanas <=4 ):
             return $semanas == 1 ? 'há uma semanas' : 'há' . $semanas . 'Semanas';
         elseif($meses <= 12):
-            return $meses 
+            return $meses  == 1 ? 'há tantos meses' : 'ha' . $meses . 'Meses';
+        elseif($anos <- 1): 
+            return $anos == 1  ? 'há 1 Ano' : 'h[a' . $anos . 'Anos';
+
     endif;
     // continuamos amanhã 05-08-2026 Quarta-feira. 
 
