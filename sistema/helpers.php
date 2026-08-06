@@ -1,5 +1,17 @@
 <?php
-//declare(strict_types=1);
+
+// Criando uma funciotn de validação:
+
+/**
+ * @param 
+ * @param
+ */
+
+function validarEmail(string $email): bool
+{
+    return filter_var($email, FILTER_VALIDATE_EMAIL) . "<br>";
+
+}
 
 
 

@@ -6,7 +6,11 @@ require_once __DIR__ . '/sistema/configuracao.php';
 include_once __DIR__ . '/sistema/helpers.php';
 
 
-echo contarTempo('2026-08-04 21:10:50');
-//strtotime();
+if(var_dump(validarEmail('teste'))):
+    echo ucfirst('Endereço de Email Valido');
+else:
+    echo "Email invalido e incorreto";
+endif;
+
 
 ?>
