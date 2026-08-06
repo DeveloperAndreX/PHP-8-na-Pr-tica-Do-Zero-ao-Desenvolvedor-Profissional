@@ -29,6 +29,12 @@ function contarTempo(string $data)
         return $minutos == 1 ? 'há um minuto' : $minutos . "minutos";
     elseif ($horas <= 24):
         return $horas == 1 ? 'há uma hora' : 'ha' . $horas . ' horas ';
+        elseif ($dias  <= 7):
+            return $dias == 1 ? ' ontem ' :  ' há' . $dias . 'dias'; 
+        elseif ($semanas <=4 ):
+            return $semanas == 1 ? 'há uma semanas' : 'há' . $semanas . 'Semanas';
+        elseif($meses <= 12):
+            return $meses 
     endif;
     // continuamos amanhã 05-08-2026 Quarta-feira. 
 
