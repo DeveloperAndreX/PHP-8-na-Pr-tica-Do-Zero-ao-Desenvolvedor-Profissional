@@ -1,15 +1,21 @@
 <?php
-
 //declare(strict_types=1);
 
+
+
+
+
+
+
+
+
 /**
- * @author Andre Panizza
- * @param float $value recebe um valor do tipo float e retorna uma função formatada.
- * @param int $transform Opcional parametro que armazena um inteiro e tira os espaços vazios (trim) e retorna uma função formatada de $transform
- * 
+ * Conta o tempo Decorrido de uma data
+ * @param string $data 
+ * @return string
  */
 
-function contarTempo(string $data)
+function contarTempo(string $data):string
 {
     $agora = strtotime(date('Y-m-d H:i:s'));
     $tempo = strtotime($data);
@@ -35,15 +41,22 @@ function contarTempo(string $data)
             return $semanas == 1 ? 'há uma semanas' : 'há' . $semanas . 'Semanas';
         elseif($meses <= 12):
             return $meses  == 1 ? 'há tantos meses' : 'ha' . $meses . 'Meses';
-        elseif($anos <- 1): 
+        else: 
             return $anos == 1  ? 'há 1 Ano' : 'h[a' . $anos . 'Anos';
 
     endif;
-    // continuamos amanhã 05-08-2026 Quarta-feira. 
+   
 
     
 
 }
+
+/**
+ * @author Andre Panizza
+ * @param float $value recebe um valor do tipo float e retorna uma função formatada.
+ * @param int $transform Opcional parametro que armazena um inteiro e tira os espaços vazios (trim) e retorna uma função formatada de $transform
+ * 
+ */
 
 
 function formatarValor(?float $value = null): string
@@ -52,6 +65,8 @@ function formatarValor(?float $value = null): string
     return "R$ " . number_Format(($value ? $value : 0), 2, ',', '.') . PHP_EOL;
     exit(0);
 }
+
+
 
 /**
  * @param float $num1 receberá um numero a ser formatado em reais
