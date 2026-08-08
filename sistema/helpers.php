@@ -3,9 +3,12 @@
 // Criando uma funciotn de validação:
 
 /**
- * @param 
- * @param
+ * 
+ * @param  string  
+ * @return   filter_var
  */
+
+// Continuaremos em 08-08-2026 Aula 29 "Tipos de Filtros"; 
 
 function validarEmail(string $email): bool
 {
