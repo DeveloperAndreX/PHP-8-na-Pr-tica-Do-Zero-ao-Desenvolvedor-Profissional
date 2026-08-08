@@ -10,6 +10,7 @@ if(var_dump(validarEmail('teste'))):
     echo ucfirst('Endereço de Email Valido');
 else:
     echo "Email invalido e incorreto";
+    
 endif;
 
 
